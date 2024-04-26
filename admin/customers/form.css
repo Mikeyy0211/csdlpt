@@ -1,0 +1,45 @@
+.form-container {
+    width: 300px;
+    /* Smaller fixed width for the form */
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    /* Slightly stronger shadow for depth */
+    background-color: white;
+    border-radius: 10px;
+    margin: auto;
+    /* This helps in centering if the parent is flex */
+}
+
+/* Styling inputs and textarea to fit well within the new form size */
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    /* Adjust width to account for padding */
+    padding: 10px;
+    margin: 10px 0;
+    /* Add some top and bottom margin */
+    box-sizing: border-box;
+    /* Include padding and border in the width */
+}
+
+textarea {
+    height: 80px;
+    /* Adjust height as needed */
+}
+
+button {
+    width: 100%;
+    /* Button width to match inputs */
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    /* Add margin on top for spacing */
+}
+
+button:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,124 @@
+/* Existing CSS for the header */
+#header {
+    background-color: #FF0000;
+    /* Red background */
+    width: 200px;
+    /* Width of the sidebar */
+    height: 100vh;
+    /* Full height */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    left: 0;
+    /* Stay on the left */
+    top: 0;
+}
+
+/* Styling the list in the header */
+#header ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    padding-top: 40px;
+    /* Top padding */
+    margin: 0;
+    /* Remove margins */
+}
+
+/* Styling the links in the header */
+#header ul li a {
+    display: block;
+    /* Make the links into blocks so they're easier to click */
+    padding: 10px;
+    /* Add padding for spacing */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: white;
+    /* Text color */
+    background-color: #FF0000;
+    /* Red background */
+}
+
+#header ul li a:hover {
+    background-color: #bbb;
+    /* Darker gray background on hover */
+    color: black;
+    /* Text color on hover */
+}
+
+/* CSS for the main content where the table is displayed */
+#main {
+    margin-left: 220px;
+    /* Giữ khoảng cách từ thanh header */
+    padding: 20px;
+    width: calc(100% - 220px);
+    overflow-x: auto;
+    /* Cho phép cuộn ngang nếu bảng vẫn rộng hơn khu vực hiển thị */
+}
+
+table {
+    width: 80%;
+    /* Giảm chiều rộng bảng từ 80% xuống 60% */
+    margin-top: 20px;
+    border-collapse: collapse;
+    /* Căn chỉnh các đường viền của bảng */
+    margin-left: auto;
+    /* Căn giữa bảng bằng auto cho cả hai lề trái và phải */
+    margin-right: auto;
+    font-size: 0.9em;
+    /* Giảm kích thước phông chữ */
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 5px;
+    /* Giảm padding trong các ô */
+    text-align: left;
+}
+
+/* Để dịch bảng sang phải hơn, tăng margin-left */
+table {
+    margin-left: 16%;
+    /* Tăng khoảng cách lề trái để dịch bảng sang phải */
+}
+
+/* Đảm bảo các hàng được làm nổi bật khi rê chuột qua */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+#header ul li.active,
+#header ul li.active a {
+    background-color: #bbb;
+    /* Màu nền xám cho cả li và a */
+    color: black;
+    /* Màu chữ đen */
+}
+
+#header ul li.active a:hover {
+    background-color: #bbb;
+    /* Giữ màu nền xám khi hover */
+    color: black;
+    /* Giữ màu chữ đen khi hover */
+}
+
+/* Styles for the button */
+.centered-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Container to center the button */
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}

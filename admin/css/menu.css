@@ -1,0 +1,57 @@
+#header {
+    background-color: #FF0000;
+    /* Red background */
+    width: 200px;
+    /* Width of the sidebar */
+    height: 100vh;
+    /* Full height */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    left: 0;
+    /* Stay on the left */
+    top: 0;
+}
+
+/* Styling the list in the header */
+#header ul {
+    list-style-type: none;
+    /* Remove bullets */
+    padding: 0;
+    padding-top: 40px;
+    /* Top padding */
+    margin: 0;
+    /* Remove margins */
+}
+
+/* Styling the links in the header */
+#header ul li a {
+    display: block;
+    /* Make the links into blocks so they're easier to click */
+    padding: 10px;
+    /* Add padding for spacing */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: white;
+    /* Text color */
+    background-color: #FF0000;
+    /* Red background */
+}
+
+#header ul li a:hover {
+    background-color: #bbb;
+    /* Darker gray background on hover */
+    color: black;
+    /* Text color on hover */
+}
+
+/* CSS for the main content where the table is displayed */
+#main {
+    margin-left: 210px;
+    /* Offset the main content to the right */
+    padding: 20px;
+    /* Additional padding for better spacing */
+    width: calc(100% - 210px);
+    /* Adjust the width of the main content */
+    overflow: hidden;
+    /* Adds overflow handling */
+}

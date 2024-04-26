@@ -1,8 +1,8 @@
 <?php
 
-$serverName = "DESKTOP-6PAU455\\CSDLPT_N8";
+$serverName = "DUONGNGUYEN\CSDLPT_N8";
 $connectionOptions = array(
-    "Database" => "QLCHS",
+    "Database" => "QuanLyCHS",
     "Uid" => "sa",
     "PWD" => "123",
     "CharacterSet" => "UTF-8"
